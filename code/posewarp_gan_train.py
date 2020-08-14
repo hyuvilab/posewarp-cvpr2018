@@ -31,7 +31,7 @@ def train(model_name, gpu_id):
 
     generator = networks.network_posewarp(params)
     #generator.load_weights('../models/vgg_100000.h5')
-    generator.load_weights('../199000.h5')
+    generator.load_weights('../models/199000.h5')
 
     discriminator = networks.discriminator(params)
     discriminator.compile(loss='binary_crossentropy', optimizer=Adam(lr=disc_lr))
